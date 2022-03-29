@@ -1,5 +1,5 @@
 # Web Technology Lab ,Assignment and Projects
-- Date :  <span style="color:     blue">Tuesday ,March 29 - 2022</span>
+- Date :  <span style="color: #fff">Tuesday ,March 29 - 2022</span>
 
 
 - Details:
