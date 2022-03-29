@@ -64,7 +64,7 @@ Rollno : ==21==
 
 
 
- 1 . [Assignments] (#Homework)
+[Assignments] (#Homework)
 
 | S.N      | Title | Link    |
 | :---        |    :----:   |          ---: |
@@ -74,7 +74,7 @@ Rollno : ==21==
 
 
 
-### 2 . Lab {#lab}
+### Lab {#lab}
 | S.N      | Title | Link    |
 | :---        |    :----:   |          ---: |
 | Lab 1      | Desc     |  <a href="#Homework">View</a> |
