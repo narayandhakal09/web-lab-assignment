@@ -6,66 +6,18 @@ Rollno : ==21==
 
 
 # TABLE OF CONTENTS
-1.<a href="#Homework">Assignments</a>
-[Heading IDs](#lab)
-2.<a href="#Lab">Lab</a>
+
+
+
+| S.N      | Table Of Content | 
+| :---     |    :----:        |  
+| 1        |   [Assignment](#Assignment)    |  
+| 2        |   [Lab](#lab)    |  
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Assignments] (#Homework)
-
+### Assignment 
 | S.N      | Title | Link    |
 | :---        |    :----:   |          ---: |
 | Assignment 1      | Get the domain and deploy a basic Html on Internet       |  <a href="#Homework">View</a> |
