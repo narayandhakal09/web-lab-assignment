@@ -1,5 +1,6 @@
 # Web Technology Lab ,Assignment and Projects
--Date : <mark> == Tuesday ,March 29 - 2022 == .
+- Date :  <span style="color:     blue">Tuesday ,March 29 - 2022</span>
+
 
 - Details:
 - Name : ==Narayan Dhakal==
