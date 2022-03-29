@@ -1,7 +1,7 @@
-# Web Technology Lab ,Assignment and Projects
+# Creat GithubRepository and push files using git commands.
 Date : Tuesday ,March 29 - 2022
 
-Creat GithubRepository and push files using git commands.
+
 
 
 Some of the basic git commang used 

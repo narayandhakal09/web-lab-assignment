@@ -1,4 +1,4 @@
-# Web Technology Lab ,Assignment and Projects
+# Fixing the Starting template from mdn website
 Date : Tuesday ,March 29 - 2022
 
 - Fixing the Starting template from mdn website
