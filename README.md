@@ -3,8 +3,8 @@
 
 
 - Details:
-- Name : ==Narayan Dhakal==
-- Rollno : ==21==
+- Name : Narayan Dhakal
+- Rollno : 21
 
 
 # TABLE OF CONTENTS

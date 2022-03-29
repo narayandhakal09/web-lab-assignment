@@ -6,7 +6,7 @@ Date : Tuesday ,March 29 - 2022
 - Final index file ([View](assets/index.html))
 
 Using semantic tags fixing the Html template.
-== Semantic Elements ==
+ Semantic Elements 
 : A semantic element clearly describes its meaning to both the browser and the developer.
 
 Semantic Elements
