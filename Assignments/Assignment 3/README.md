@@ -10,13 +10,13 @@ Using semantic tags fixing the Html template.
 
 Semantic Elements
 ```
-<header>
-<nav>
-<main>
-<section>
-<article>
-<aside>
-<footer>
+<header> ... </header>
+<nav>...</nav>
+<main>...</main>
+<section>...</section>
+<article>...</article>
+<aside>...</aside>
+<footer>...</footer>
 ```
 
 
