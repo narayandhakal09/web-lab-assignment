@@ -7,7 +7,7 @@ Rollno : ==21==
 
 # TABLE OF CONTENTS
 1.<a href="#Homework">Assignments</a>
-[Heading IDs](#2--lab-lab)
+[Heading IDs](#lab)
 2.<a href="#Lab">Lab</a>
 
 
@@ -74,7 +74,7 @@ Rollno : ==21==
 
 
 
-### Lab {#lab}
+### Lab 
 | S.N      | Title | Link    |
 | :---        |    :----:   |          ---: |
 | Lab 1      | Desc     |  <a href="#Homework">View</a> |
