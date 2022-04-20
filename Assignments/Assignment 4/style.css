@@ -16,37 +16,45 @@ header h1 {
 header h2 {
     font-size: 20px;
 }
-.table{
+
+.table {
     margin: 15px 50px;
 }
 
-table  {
+table {
     border: 2px solid black;
-    border-collapse:collapse ;
+    border-collapse: collapse;
     width: 83%;
     height: 70%;
     text-align: center;
 }
-td{
+
+td {
     border: 1px solid black;
 }
-.hei{
-   border: 2px solid black;
+
+.hei {
+    border: 2px solid black;
     line-height: 3px;
 }
-section{display: flex}
-aside{
+
+section {
+    display: flex;
+}
+
+aside {
     margin-top: 40px;
     margin-left: 5px;
     text-align: left;
 }
-.headers td{
+
+.headers td {
     border: 2px solid black;
 
 }
-.highlight{
+
+.highlight {
     background-color: #73f0425e;
-    
+
     width: 988px;
 }
-
