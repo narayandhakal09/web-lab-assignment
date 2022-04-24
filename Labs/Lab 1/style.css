@@ -20,42 +20,55 @@ h1 ,h2 ,h3 ,h4{
 }
 
 header {
-    margin-bottom: 15px;
+    margin-top: 0px;
     background-color: rgb(42, 42, 187);
 }
 
-header nav ol {
-    display: flex;
+nav {
+    width: 100%;
+    
 
 
 }
-
+nav ol {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    list-style-type: none;
+   
+    overflow: hidden;
+   
+}
 header nav ol li {
-    padding: 15px;
-
+  
+   
+  
+    
     list-style: none;
     margin-left: 15px;
-    font-size: 30px;
-    justify-content: space-around;
-    color: #fff;
-    text-transform: uppercase;
-
-
+        justify-content: space-around;
+        color: #fff;
 }
-header nav ol li:hover{
+header nav ol li :hover {
     background-color: #fff;
     color: blue;
 }
 
-nav {
-    padding: 0 35%;
+header nav ol li a {
+    padding: 15px;
+  
+    font-size: 30px;
+        color: #fff;
+        text-decoration: none;
+
+    text-transform: uppercase;
+
 
 }
 
-nav ol {
-    display: flex;
-    justify-content: space-between;
-}
+
+
+
 
 main {
     margin: 0 100px;
@@ -83,6 +96,7 @@ section .image img{
 }
 .row{
     margin-bottom: 20px ;
+    display: flex;
 }
 ol , ul {
     padding-left: 30px;
@@ -90,15 +104,21 @@ ol , ul {
 
 
 }
+iframe , audio,video{
+    width: 100%;
+    overflow: hidden;
+
+}
 
 
 
 aside {
     width: 20%;
-    height: 900px;
+    /* height: 900px; */
     float: right;
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
+    padding: 10px;
 
 }
 .fifty-fifty{

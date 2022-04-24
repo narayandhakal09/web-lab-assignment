@@ -13,9 +13,16 @@
     <header>
         <nav>
             <ol>
-                <li>Home</li>
-                <li>DEFAULT</li>
-                <li>DEFAULT</li>
+                <li><a href="#content">Home</a></li>
+                <li><a href="#image">Image</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#Listing">Listing Methods</a></li>
+                <li><a href="#iframe">Iframes</a> </li>
+
+
+
+
             </ol>
         </nav>
     </header>
@@ -24,11 +31,21 @@
             <div class="title">
                 <h1>Lab 1 Project For Web Technology.</h1>
             </div>
-            <div class="image">
-                <img src="table.jpg" alt="">
-            </div>
-            <div class="content">
-                <div class="listing-methods">
+
+            <div class="content " id="content">
+                <div class="image" id="image">
+                    <img src="table.jpg" alt="">
+                </div>
+               
+                <div class="video" id="video">
+                    <h3>Using video </h3>
+                    <video src="video.mp4" controls>
+                        <p>Your browser doesn't support HTML5 video.</p>
+                    </video>
+                
+                </div>
+
+                <div class="listing-methods" id="Listing">
                     <div class="row">
                         <div class="fifty-fifty left">
                             <h3>Ordered list</h3>
@@ -38,7 +55,21 @@
                                 <li>third item</li>
                             </ol>
 
+
                         </div>
+                        <div class="fifty-fifty left">
+                            <h3>Unordered list</h3>
+                            <ul>
+                                <li>first item</li>
+                                <li>second item</li>
+
+                                <li>third item</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
                         <div class="fifty-fifty right">
                             <h3>Nested Ordered list</h3>
                             <ol>
@@ -53,18 +84,8 @@
                             </ol>
 
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="fifty-fifty left">
-                            <h3>Unordered list</h3>
-                            <ul>
-                                <li>first item</li>
-                                <li>second item</li>
-
-                                <li>third item</li>
-                            </ul>
-                        </div>
                         <div class="fifty-fifty right">
+
                             <h3>Nested Unordered list</h3>
                             <ul>
                                 <li>first item</li>
@@ -79,16 +100,42 @@
                         </div>
                     </div>
                 </div>
+                <div class="video">
+                    <h2>Embedding</h2>
+                    <iframe width="560" height="400" src="https://www.youtube.com/embed/a_qREkJ78f4" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
+                   
+                </div>
+          
 
 
 
-                <h3></h3>
+
 
 
             </div>
         </section>
         <aside>
-
+           
+            <div class="audio" id="audio">
+                <h3>Using audio </h3>
+            
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mp3">
+            
+                    <p>Your browser doesn't support HTML5 audio.</p>
+                </audio>
+            
+            </div>
+            <h2>Using Iframe </h2>
+            <iframe
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fzuck%2Fposts%2F10114442471972191&show_text=true&width=500"
+                width="500" height="590" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+              
+                ></iframe>
+           
         </aside>
 
     </main>
