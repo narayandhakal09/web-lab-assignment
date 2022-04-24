@@ -33,4 +33,4 @@
 ### Lab 
 | S.N      | Title | Link    |
 | :---        |    :----:   |          ---: |
-| Lab 1      | Simple Html Webpage     |  [View](Labs/Lab%201/README.md)|
+| Lab 1      | Simple Html Webpage     |  [View](Labs/Lab%201)|
