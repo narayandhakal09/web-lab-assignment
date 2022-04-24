@@ -8,4 +8,4 @@ Date : Sunday ,April 24 - 2022
 	* image, video and audio
 	* iframe
 
-    - Final index file ([View](index.html)) / live website [View](https://narayandhakal09.github.io/wt-lab-assignment/labs/lab%201/index.html)
+    - Final index file ([View](index.html)) / live website [View](https://narayandhakal09.github.io/wt-lab-assignment/Labs/Lab%201/index.html)
