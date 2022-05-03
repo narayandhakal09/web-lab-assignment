@@ -1,6 +1,12 @@
+@font-face {
+    font-family: droid-sans-bold;
+    src: url(fonts/droid-sans.bold.ttf);
+}
+
 * {
     font-family: 'droid-sans-bold', sans-serif;
     font-weight: 600;
+    line-height: 20px;
 }
 
 :root {
@@ -12,7 +18,7 @@
     --hover: 95%;
     --press: 70%;
     --disable: 45%;
-    /* --border-none:none !important; */
+
 
 
 
@@ -20,6 +26,9 @@
 }
 
 /* //////////////////////    UTILITY CLASS STYLING STARTS /////////////////////////////////////// */
+.bg-green {
+    background-color: var(--primary);
+}
 
 .hover {
     border-bottom: 3px solid #93ADB5;
@@ -30,23 +39,28 @@
 
 .press {
     opacity: var(--press);
-    /* border: var(--border-none); */
+
 }
 
 .disabled {
     opacity: var(--disable);
     cursor: not-allowed;
-    /* border: var(--border-none); */
+
 }
 
 
 
 /* //////////////////////    UTILITY CLASS STYLING ENDS /////////////////////////////////////// */
 
+.body {
+    position: relative;
+}
 
-.main {
-
-    /* margin: 18px 230px; */
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .main-title {
@@ -105,7 +119,6 @@ div .row,
 .row-hov,
 .row-press,
 .row-dis {
-    /* padding: 10px 30px; */
     padding: 10px 10px;
 
 
@@ -127,10 +140,10 @@ div .row a {
 }
 
 .btn {
-    line-height: 10px;
+
     background-color: red;
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 9px 30px;
 
 
 }
@@ -151,7 +164,6 @@ div .row a {
 
 .btn-round-def:hover {
     border-bottom: 3px solid #1A9781;
-    /* opacity: 90%; */
     padding: 9px 12px;
 }
 
@@ -195,7 +207,6 @@ Other state of round btn are using utility classes
 
 
 .btn-primary-def {
-    /* padding: 10px 30px; */
     background-color: var(--primary);
     color: var(--white);
 
@@ -221,7 +232,6 @@ Other state of round btn are using utility classes
 }
 
 .primary-hover {
-    padding: 10px 30px;
     background-color: var(--primary);
     color: var(--white);
 
@@ -251,6 +261,7 @@ Other state of round btn are using utility classes
 .btn-secondary-def:hover {
     border-bottom: 3px solid #93ADB5;
 }
+
 .btn-secondary-def:active {
     opacity: var(--press);
     border: none;
@@ -262,7 +273,7 @@ Other state of round btn are using utility classes
     color: var(--text);
     border: 1px solid #403e3e54;
 
-   
+
 }
 
 .secondary-hover {
@@ -272,7 +283,7 @@ Other state of round btn are using utility classes
     color: var(--text);
     border: 1px solid #403e3e54;
     border-bottom: 3px solid #93ADB5;
-   
+
 
 }
 
@@ -282,7 +293,7 @@ Other state of round btn are using utility classes
 
     background-color: var(--destructive);
     color: var(--white);
-  
+
 
 
 }
@@ -302,8 +313,7 @@ Other state of round btn are using utility classes
 .destructive {
     background-color: var(--destructive);
     color: var(--white);
-    /* border-bottom: 3px solid #403e3e54; */
-   
+
 }
 
 .destructive-hover {
@@ -312,9 +322,11 @@ Other state of round btn are using utility classes
 
     color: var(--white);
 
-    border-bottom: 3px solid #BE684F;;
+    border-bottom: 3px solid #BE684F;
+    ;
 
 }
+
 /*//////////////////////////  Primary With Background Buttons Col  //////////////////////////////// */
 
 
@@ -344,7 +356,6 @@ Other state of round btn are using utility classes
 .btn-neg-primary {
     background-color: var(--white);
     color: var(--primary);
-    /* border-bottom: 3px solid #403e3e54; */
 
 }
 
@@ -360,3 +371,173 @@ Other state of round btn are using utility classes
 }
 
 /*//////////////////////////  Primary With Background Buttons Col Ends //////////////////////////////// */
+
+
+
+
+/* 
+Buttons with oulline
+
+
+*/
+
+/* primary */
+.btn-outline {
+
+    border-radius: 5px;
+    padding: 9px 30px;
+    border: 1px solid;
+
+
+}
+
+
+/*//////////////////////////  Primary Border Buttons Col  //////////////////////////////// */
+
+
+
+.btn-outline-primary-def {
+    color: var(--primary);
+}
+
+.btn-outline-primary-def:hover {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-primary-def:active {
+    opacity: var(--press);
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-outline-primary-hover {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-primary-press {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+}
+
+/*//////////////////////////  Primary Border Buttons Col  //////////////////////////////// */
+
+
+
+
+
+/*//////////////////////////  Secondary Border Buttons Col  //////////////////////////////// */
+.btn-outline-secondary-def {
+    border: 1px solid #C5D3D8;
+    color: #9FB7BE;
+}
+
+.btn-outline-secondary-def:hover {
+    border: 2px solid var(--text);
+    color: var(--text);
+}
+
+.btn-outline-secondary-def:active {
+    opacity: var(--press);
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 1px solid var(--text);
+}
+
+.btn-outline-secondary-hover {
+    border: 2px solid var(--text);
+    color: var(--text);
+}
+
+.btn-outline-secondary-press {
+    opacity: var(--press);
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 1px solid var(--text);
+}
+
+.btn-outline-secondary {
+    color: var(--text);
+}
+
+/*//////////////////////////  Secondary Border Buttons Col  //////////////////////////////// */
+
+/*//////////////////////////  Destructive Border Buttons Col  //////////////////////////////// */
+.btn-outline-destructive-def {
+    color: var(--destructive);
+}
+
+.btn-outline-destructive-def:hover {
+    border: 2px solid var(--destructive);
+    color: var(--destructive);
+}
+
+.btn-outline-destructive-def:active {
+    opacity: var(--press);
+    background-color: var(--destructive);
+    color: var(--white);
+}
+
+.btn-outline-destructive-hover {
+    color: var(--destructive);
+    border: 2px solid var(--destructive);
+}
+
+.btn-outline-destructive-press {
+    color: var(--white);
+    background-color: var(--destructive);
+}
+
+.btn-outline-destructive {
+    color: var(--destructive);
+}
+
+/*//////////////////////////  Destructive Border Buttons Col  //////////////////////////////// */
+
+
+
+
+
+
+
+/*//////////////////////////  Secondary neg Border Buttons Col  //////////////////////////////// */
+
+.btn-neg-outline-secondary-def {}
+
+.btn-neg-outline-secondary-def {
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.btn-neg-outline-secondary-def:hover {
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.btn-neg-outline-secondary-def:active {
+    opacity: var(--press);
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.btn-neg-outline-secondary-hover {
+    color: var(--white);
+    background-color: none;
+    border: 2px solid var(--secondary);
+}
+
+.btn-neg-outline-secondary-press {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+.btn-neg-outline-secondary {
+    color: var(--secondary);
+}
+
+/*//////////////////////////  Secondary neg Border Buttons Col  //////////////////////////////// */
