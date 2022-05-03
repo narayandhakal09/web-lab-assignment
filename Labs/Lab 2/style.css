@@ -1,0 +1,362 @@
+* {
+    font-family: 'droid-sans-bold', sans-serif;
+    font-weight: 600;
+}
+
+:root {
+    --primary: #37C19C;
+    --secondary: #E5EBED;
+    --destructive: #EE8363;
+    --text: #668B97;
+    --white: #FEFEFE;
+    --hover: 95%;
+    --press: 70%;
+    --disable: 45%;
+    /* --border-none:none !important; */
+
+
+
+
+}
+
+/* //////////////////////    UTILITY CLASS STYLING STARTS /////////////////////////////////////// */
+
+.hover {
+    border-bottom: 3px solid #93ADB5;
+
+
+
+}
+
+.press {
+    opacity: var(--press);
+    /* border: var(--border-none); */
+}
+
+.disabled {
+    opacity: var(--disable);
+    cursor: not-allowed;
+    /* border: var(--border-none); */
+}
+
+
+
+/* //////////////////////    UTILITY CLASS STYLING ENDS /////////////////////////////////////// */
+
+
+.main {
+
+    /* margin: 18px 230px; */
+}
+
+.main-title {
+    font-size: 30px;
+    margin: -8px 20px;
+    color: rgb(79, 80, 83);
+
+}
+
+.container {
+    display: flex;
+    text-align: left;
+
+}
+
+.nav,
+.title {
+    color: #75727277;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.title2 {
+    color: #ffffff77;
+
+}
+
+.nav .element .row,
+.row-def,
+.row-hov,
+.row-press,
+.row-dis {
+    text-align: left;
+}
+
+.col {
+    width: fit-content;
+    margin: -4px;
+}
+
+.row,
+.row-def,
+.row-hov,
+.row-press,
+.row-dis {
+    margin: 10px;
+    text-align: center;
+}
+
+.element {
+    padding: 7px 0px;
+}
+
+div .row,
+.row-def,
+.row-hov,
+.row-press,
+.row-dis {
+    /* padding: 10px 30px; */
+    padding: 10px 10px;
+
+
+}
+
+a {
+
+    text-decoration: none;
+}
+
+div .row a {
+    text-decoration: none;
+
+}
+
+.row a i {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.btn {
+    line-height: 10px;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px 30px;
+
+
+}
+
+/* Round buttons  //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* Round button default with pseudo classes */
+.btn-round-def {
+    border-radius: 50%;
+    padding: 9px 12px;
+    background-color: var(--primary);
+
+    color: var(--white);
+
+
+}
+
+.btn-round-def:hover {
+    border-bottom: 3px solid #1A9781;
+    /* opacity: 90%; */
+    padding: 9px 12px;
+}
+
+.btn-round-def:active {
+    opacity: var(--press);
+
+    border: none;
+}
+
+/* Round button default with pseudo classes ends*/
+
+
+/* Round button different states ui */
+.round {
+    border-radius: 50%;
+    padding: 9px 12px;
+    background-color: var(--primary);
+
+    color: var(--white);
+
+}
+
+.round-hover {
+    border-radius: 50%;
+    padding: 9px 12px;
+    background-color: var(--primary);
+
+    color: var(--white);
+
+    border-bottom: 3px solid #1e6d58;
+
+}
+
+/* 
+Other state of round btn are using utility classes 
+*/
+
+/* Round buttons  //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Primary buttons  //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.btn-primary-def {
+    /* padding: 10px 30px; */
+    background-color: var(--primary);
+    color: var(--white);
+
+
+
+}
+
+.btn-primary-def:hover {
+    border-bottom: 3px solid #1e6d58;
+
+}
+
+.btn-primary-def:active {
+    opacity: var(--press);
+    border: none;
+}
+
+/* state of primary */
+.primary {
+    background-color: var(--primary);
+    color: var(--white);
+
+}
+
+.primary-hover {
+    padding: 10px 30px;
+    background-color: var(--primary);
+    color: var(--white);
+
+    border-bottom: 3px solid #1e6d58;
+
+
+}
+
+
+
+
+
+
+
+
+/* //////////////////////////Secondary Buttons Col//////////////////////////////// */
+
+
+.btn-secondary-def {
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 1px solid #403e3e54;
+
+
+}
+
+.btn-secondary-def:hover {
+    border-bottom: 3px solid #93ADB5;
+}
+.btn-secondary-def:active {
+    opacity: var(--press);
+    border: none;
+
+}
+
+.secondary {
+    background-color: var(--secondary);
+    color: var(--text);
+    border: 1px solid #403e3e54;
+
+   
+}
+
+.secondary-hover {
+
+    background-color: var(--secondary);
+
+    color: var(--text);
+    border: 1px solid #403e3e54;
+    border-bottom: 3px solid #93ADB5;
+   
+
+}
+
+/* //////////////////////////  Secondary Buttons Col  //////////////////////////////// */
+/* //////////////////////////  Destructive Buttons Col  //////////////////////////////// */
+.btn-destructive-def {
+
+    background-color: var(--destructive);
+    color: var(--white);
+  
+
+
+}
+
+
+
+.btn-destructive-def:hover {
+    border-bottom: 3px solid #BE684F;
+}
+
+.btn-destructive-def:active {
+    opacity: var(--press);
+    border: none;
+
+}
+
+.destructive {
+    background-color: var(--destructive);
+    color: var(--white);
+    /* border-bottom: 3px solid #403e3e54; */
+   
+}
+
+.destructive-hover {
+
+    background-color: var(--destructive);
+
+    color: var(--white);
+
+    border-bottom: 3px solid #BE684F;;
+
+}
+/*//////////////////////////  Primary With Background Buttons Col  //////////////////////////////// */
+
+
+
+
+.btn-neg-primary-def {
+
+    background-color: var(--white);
+    color: var(--primary);
+
+
+
+}
+
+
+
+.btn-neg-primary-def:hover {
+    border-bottom: 3px solid #a1cec3;
+}
+
+.btn-neg-primary-def:active {
+    opacity: var(--press);
+    border: none;
+
+}
+
+.btn-neg-primary {
+    background-color: var(--white);
+    color: var(--primary);
+    /* border-bottom: 3px solid #403e3e54; */
+
+}
+
+.btn-neg-primary-hover {
+
+    background-color: var(--white);
+
+    color: var(--primary);
+
+    border-bottom: 3px solid #a1cec3;
+    ;
+
+}
+
+/*//////////////////////////  Primary With Background Buttons Col Ends //////////////////////////////// */
