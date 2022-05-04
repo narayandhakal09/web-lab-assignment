@@ -1,3 +1,12 @@
+# TABLE OF CONTENTS
+
+- [TABLE OF CONTENTS](#table-of-contents)
+- [Web Technology Lab ,Assignment and Projects](#web-technology-lab-assignment-and-projects)
+    - [Assignment](#assignment)
+    - [Lab](#lab)
+
+
+
 # Web Technology Lab ,Assignment and Projects
 - Date :  <span style="color: #fff">Tuesday ,March 29 - 2022</span>
 
@@ -7,14 +16,6 @@
 - Rollno : 21
 
 
-# TABLE OF CONTENTS
-
-
-
-| S.N      | Table Of Content | 
-| :---     |    :----:        |  
-| 1        |   [Assignment](#Assignment)    |  
-| 2        |   [Lab](#lab)    |  
 
 
 
@@ -34,3 +35,4 @@
 | S.N      | Title | Link    |
 | :---        |    :----:   |          ---: |
 | Lab 1      | Simple Html Webpage     |  [View](Labs/Lab%201)|
+| Lab 2      |Html Buttons and Borders    |  [View](Labs/Lab%202)|

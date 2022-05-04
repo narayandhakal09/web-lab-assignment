@@ -1,8 +1,8 @@
 
 
-### Labs 
-| S.N      |  Link |  Title |
+### Lab
+
+| S.N      | Title | Link    |
 | :---        |    :----:   |          ---: |
-| lab 1      | [View](Lab%201/README.md)|   Basic html webpage   |  
-
-
+| Lab 1      | Simple Html Webpage     |  [View](Lab%201)|
+| Lab 2      |Html Buttons and Borders    |  [View](Lab%202)|

@@ -1,6 +1,3 @@
-
-# Lab 2: Buttons, Border, Color and Pseudo class.
-
 Date : Tuesday ,MAY 3 - 2022
 
 - [Lab 2: Buttons, Border, Color and Pseudo class.](#lab-2-buttons-border-color-and-pseudo-class)
@@ -15,6 +12,8 @@ Date : Tuesday ,MAY 3 - 2022
     - [CSS Pseudo-classes](#css-pseudo-classes)
       - [Syntax](#syntax)
 
+
+# Lab 2: Buttons, Border, Color and Pseudo class.
 
 ##  Q1 Create buttons as per given figure.
 - Question ([View](https://github.com/nishalgurung4/wt-2020/tree/main/Labs/Lab2))
