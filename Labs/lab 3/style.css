@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+
+
+
+
+/* ////////////////////////////////////////// Utility classes ////////////////////////////////////////// */
+
+.grid {
+    display: grid;
+}
+
+.grid-col-11 {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+}
+
+.gaps {
+    gap: 1rem;
+}
+.width-100 {
+    width: 100%;
+}
+.white {
+    color: #fff;
+}
+.small {
+    font-size: xx-small;
+}
+
+/* ////////////////////////////////////////// Utility class ends ////////////////////////////////////////// */
+
+/* ////////////////////////////////////////// After Body Styling ////////////////////////////////////////// */
+
+
+body {
+    background-color: rgb(15 23 42/1);
+    background: rgb(23, 50, 78);
+        background: radial-gradient(circle, rgba(23, 50, 78, 1) 0%, rgba(15, 23, 42, 1) 100%);
+}
+
+
+/* main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+                .container {
+                    margin: 0 8%;
+                }
+
+section {
+    line-height: 1rem;
+}
+.row {
+    margin: 10px;
+
+}
+
+.first {
+    top: 0px;
+    color: hsl(0, 0%, 100%);
+    /* background-color: white; */
+    padding: 10px;
+}
+.color {
+    height: 2.5rem;
+    /* width: 4.5rem; */
+    border-radius: 0.25rem;
+    background-color: rgb(243, 42, 42);
+    border: 0.01px solid hsla(0, 0%, 100%, 0.451);
+
+}
+
+.details {
+    padding-left: .125rem;
+    padding-right: .125rem;
+    justify-content: space-between;
+    display: block;
+    margin-top: 0.3rem;
+}
+.fade {
+    color: hsl(215, 20%, 65%);
+
+}
+/* ////////////////////////////////////////// After Body Styling Ends ////////////////////////////////////////// */
+
+
+
+
+
+
+
+/* ////////////////////////////////////////// Starting of HSLA Colors classes ////////////////////////////////////////// */
+
+/* slate */
+
+.slate-50 {
+    background-color: hsl(210, 40%, 98%);
+
+}
+.slate-100 {
+ background-color: hsl(210, 40%, 96%);
+}
+.slate-200{
+ background-color:hsl(214, 30%, 91%) ;
+}
+.slate-300{
+ background-color: hsl(213, 27%, 84%);
+}
+.slate-400{
+ background-color:hsl(215, 20%, 65%) ;
+}
+.slate-500{
+ background-color: hsl(215, 16%, 47%) ;
+}
+.slate-600{
+ background-color:hsl(215, 19%, 35%) ;
+}
+.slate-700{
+ background-color:hsl(215, 25%, 27%) ;
+}
+.slate-800{
+ background-color:hsl(217, 33%, 17%) ;
+}
+.slate-900{
+ background-color: hsl(222, 46%, 11%);
+}
+
+/* slate */
+/* gray */
+
+.gray-50 {
+    background-color: hsl(210, 20%, 98%);
+
+}
+
+.gray-100 {
+    background-color: hsl(220, 14%, 96%);
+}
+
+.gray-200 {
+    background-color: hsl(220, 13%, 91%);
+}
+
+.gray-300 {
+    background-color: hsl(216, 12%, 84%);
+}
+
+.gray-400 {
+    background-color: hsl(218, 11%, 65%);
+}
+
+.gray-500 {
+    background-color: hsl(220, 9%, 46%);
+}
+
+.gray-600 {
+    background-color: hsl(215, 14%, 34%);
+}
+
+.gray-700 {
+    background-color: hsl(217, 19%, 27%);
+}
+
+.gray-800 {
+    background-color: hsl(215, 28%, 17%);
+}
+
+.gray-900 {
+    background-color: hsl(221, 39%, 11%);
+}
+
+/* gray */
