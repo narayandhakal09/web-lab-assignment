@@ -25,16 +25,23 @@
 
 <body>
 
-    <h1>The writing-mode Property</h1>
-
-    <p class="test1">Some text with default writing-mode.</p>
-    <p class="test1">Some text with default writing-mode.</p>
-    <p class="test1">Some text with default writing-mode.</p>
-
-    <p>Some text with a span element with a <span class="test2">vertical-rl</span> writing-mode.</p>
-
-    <p class="test2">Some text with writing-mode: vertical-rl.</p>
-
+<div class="class">
+    <span>dd</span><span>dd</span>
+</div>
+<div class="class">
+    <span>dd</span><span>dd</span><p>d</p><p>d</p>
+</div>
 </body>
 
 </html>
+<style>
+    div{
+        margin: 30px;
+    }
+    span , p {
+        margin: 30px;
+    }
+    p{
+        display: inline-block;
+    }
+</style>
