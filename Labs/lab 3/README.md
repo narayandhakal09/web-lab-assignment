@@ -9,7 +9,7 @@
 
 ## Preview
 
-- Tailwind css colors Ui ([View](index.html)) / live website [View](https://narayandhakal09.github.io/wt-lab-assignment/Labs/lab%203/Index.html)
+- Tailwind css colors Ui ([View](Index.html)) / live website [View](https://narayandhakal09.github.io/wt-lab-assignment/Labs/lab%203/Index.html)
   ![preview](preview.png)
 
 ## Description
