@@ -70,16 +70,16 @@ section {
 .first {
     top: 0px;
     color: hsl(0, 0%, 100%);
-    /* background-color: white; */
+  
     padding: 10px;
     font-size: 16px;
-    /* margin-left: ; */
+  
     width: fit-content;
 }
 
 .color {
     height: 2.5rem;
-    /* width: 4.5rem; */
+
     border-radius: 0.25rem;
     background-color: rgb(243, 42, 42);
     border: 0.01px solid hsla(0, 0%, 100%, 0.451);
