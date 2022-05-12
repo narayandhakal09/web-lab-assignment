@@ -36,3 +36,5 @@
 | :---        |    :----:   |          ---: |
 | Lab 1      | Simple Html Webpage     |  [View](Labs/Lab%201)|
 | Lab 2      |Html Buttons and Borders    |  [View](Labs/Lab%202)|
+| Lab 3      |Tailwind css Color pallets  |  [View](Labs/Lab%203)|
+
