@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&family=Source+Sans+Pro:wght@300;400&family=Work+Sans:wght@700&display=swap');
+
+* {
+    /* font-family: 'Ramabhadra', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Work Sans', sans-serif; */
+    margin: 0px;
+    padding: 0px;
+}
+/* ////////////////////////////////////////// Colors ////////////////////////////////////////// */
+:root {
+    --primary: hsl(243, 75%, 59%);
+    --secondary: hsl(226, 94%, 94%);
+    --text: hsl(222, 4%, 56%);
+}
+
+
+.shift--30 {
+    margin-top: -30px;
+}
+
+/* ////////////////////////////////////////// Styling starts ////////////////////////////////////////// */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.content {
+    display: inline-block;
+}
+
+.right {
+    float: left;
+    font-size: 2.9rem;
+    font-weight: bold;
+    font-family: 'Ramabhadra', sans-serif;
+    color: var(--primary);
+}
+
+.left {
+    margin-left: 1rem;
+    float: right;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.buttons {
+    margin-top: 3.5rem;
+    font-size: 16px;
+}
+
+.buttons a {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: red;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.fill {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.neg-fill {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+.vertical {
+    border-left: 2px solid var(--text);
+    height: 70px;
+    position: absolute;
+    opacity: 20%;
+}
+.text {
+    color: black;
+    font-size: larger;
+    padding-left: 1rem;
+}
+.main {
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: 'Ramabhadra', sans-serif;
+}
+.sec {
+    font-size: 1.3rem;
+    color: var(--text);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin-top: -15px;
+    display: block;
+}
+/* ////////////////////////////////////////// Ends 404 ERROR ////////////////////////////////////////// */
+
