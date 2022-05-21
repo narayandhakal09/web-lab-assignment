@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');     
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* ////////////////////////////////////////// Utilities ////////////////////////////////////////// */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+.fifty{
+    max-width: 50%;
+
+}
+
+
+.inline-block {
+    display: inline-block;
+}
+
+/* ////////////////////////////////////////// Utilities ////////////////////////////////////////// */
+
+
+/* ////////////////////////////////////////// Styling Starts ////////////////////////////////////////// */
+.container{
+
+   
+        left: 0;
+        right: 0;
+        text-align: center;
+            margin: 30px 30px 0px 30px;
+   
+       
+}
+
+
+/* ////////////////////////////////////////// Nav Bar Styling ////////////////////////////////////////// */
+.brand{
+    font-size: 44px;
+    font-weight: 700;
+}
+ul>li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 55px;
+}
+.menu{
+    font-size: 20px;
+    margin-top: 15px;
+    
+
+}
+.btns{
+    font-size: 20px;
+    padding: 18px 25px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    line-height: 13px;
+}
+.container .fifty{
+    margin-top: 100px;
+}
+
+
+
+
+.headertext{
+    font-size: 50px;
+    text-align: left;
+    margin-top: 40px;
+    margin-right: 35px;
+}
+.lists{
+    text-align: left;
+}
+.item{
+    margin-top: 30px;
+        font-size: 23px;
+}
+.lists div.svg{
+    /* width: 16px; */
+    margin-right: 20px;
+   
+    display: inline-block;
+        vertical-align: middle;
+ 
+}
+.item p{
+    display: inline-block;
+     
+}
+.icon {
+    width: 30px;
+    height: 30px;
+
+}
+.svg {
+    background-color: #3B83F7;
+   
+    -webkit-mask: url(../images/task-hero-tick-icon.svg) no-repeat center / contain;
+}
+.subscribe {
+    margin-top: 50px;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 45px;
+    padding-right: 50px;
+    border-radius: 5px;
+ border-color: #3b3b3b13;
+
+}
+::placeholder {
+   padding-left: 30px;
+   font-size:18px;
+   color: #3b3b3bb8;
+}
+input[type="submit"] {
+    margin-left: -80px;
+    height: 40px;
+    width: 70px;
+    background: #3B83F7;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.right img{
+
+    width: -webkit-fill-available;
+       height:-webkit-fill-available ; 
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+
+
