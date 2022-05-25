@@ -131,7 +131,13 @@ input[type="text"] {
     display: inline-block;
 
 }
+#user {
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
 
+}
 
 
 
