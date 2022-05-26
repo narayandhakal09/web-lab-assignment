@@ -49,6 +49,14 @@ nav {
     box-shadow: 0 1px 10px -1px rgb(0 0 0 / 20%);
 
 }
+nav a{
+    text-decoration: none;
+    color: black;
+}
+#user{
+        opacity: 100;
+            border-radius: 57%;
+}
 
 .brand {
     font-size: 25px;
@@ -142,16 +150,19 @@ input[type="text"] {
 
 
 /* ////////////////////////////////////////// Only for clean view for small screens ////////////////////////////////////////// */
-@media (max-width: 640px) {
-
-    .menu {
-        display: none;
-    }
+@media (max-width: 550px) {
+.brand{
+    margin-left: 5%;
+}
+    .right {
+            display: none;
+        }
 
 }
 
-@media (max-width: 950px) {
-    .right {
-        display: none;
-    }
+@media (max-width: 976px) {
+   
+         .menu {
+             display: none;
+         }
 }

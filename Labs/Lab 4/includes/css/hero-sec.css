@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');     
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
 /* ////////////////////////////////////////// Utilities ////////////////////////////////////////// */
 .left {
     float: left;
@@ -12,7 +14,8 @@
 .right {
     float: right;
 }
-.fifty{
+
+.fifty {
     max-width: 50%;
 
 }
@@ -26,85 +29,83 @@
 
 
 /* ////////////////////////////////////////// Styling Starts ////////////////////////////////////////// */
-.container{
-
-   
-        left: 0;
-        right: 0;
-        text-align: center;
-            margin: 23px 30px 0px 30px;
-   
-       
+.container {
+    /* left: 0; */
+    /* right: 0; */
+    text-align: center;
+    margin: 23px 30px 0px 30px;
 }
 
 
 /* ////////////////////////////////////////// Nav Bar Styling ////////////////////////////////////////// */
-.brand{
-    font-size: 44px;
-    font-weight: 700;
+.brand {
+    font-size: 37px;
+    font-weight: 600;
 }
+
 ul>li {
     list-style: none;
     display: inline-block;
     margin-left: 55px;
 }
-.menu{
+
+.menu {
     font-size: 20px;
     margin-top: 15px;
-    
+
 
 }
-.btns{
+
+.btns {
     font-size: 16px;
-        padding: 12px 27px;
-        border-radius: 5px;
-        border: 1px solid #000;
-        line-height: 13px;
-        vertical-align: middle;
-        display: inline-block;
+    padding: 12px 27px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    line-height: 13px;
+    vertical-align: middle;
+    display: inline-block;
 }
-.container .fifty{
+
+.container .fifty {
     margin-top: 100px;
 }
 
-
-
-
-.headertext{
-    font-size: 50px;
+.headertext h2 {
+    font-size: 55px;
     text-align: left;
     margin-top: 40px;
     margin-right: 35px;
 }
-.lists{
+
+.lists {
     text-align: left;
 }
-.item{
+
+.item {
     margin-top: 30px;
-        font-size: 23px;
+    font-size: 23px;
 }
-.lists div.svg{
-    /* width: 16px; */
+
+.lists div.svg {
     margin-right: 20px;
-   
     display: inline-block;
-        vertical-align: middle;
- 
+    vertical-align: middle;
 }
-.item p{
+
+.item p {
     display: inline-block;
-     
 }
+
 .icon {
     width: 30px;
     height: 30px;
-
 }
+
 .svg {
     background-color: #3B83F7;
-   
     -webkit-mask: url(../images/task-hero-tick-icon.svg) no-repeat center / contain;
 }
+
 .subscribe {
     margin-top: 50px;
     text-align: left;
@@ -115,14 +116,16 @@ input[type="text"] {
     height: 45px;
     padding-right: 50px;
     border-radius: 5px;
- border-color: #3b3b3b13;
+    border-color: #3b3b3b13;
 
 }
+
 ::placeholder {
-   padding-left: 30px;
-   font-size:18px;
-   color: #3b3b3bb8;
+    padding-left: 30px;
+    font-size: 18px;
+    color: #3b3b3bb8;
 }
+
 input[type="submit"] {
     margin-left: -80px;
     height: 40px;
@@ -136,15 +139,10 @@ input[type="submit"] {
     -webkit-appearance: none;
 }
 
-.right img{
+.right img {
 
     width: -webkit-fill-available;
-       height:-webkit-fill-available ; 
-  border-radius: 10px;
-  object-fit: cover;
+    height: -webkit-fill-available;
+    border-radius: 10px;
+    object-fit: cover;
 }
-
-
-
-
-
