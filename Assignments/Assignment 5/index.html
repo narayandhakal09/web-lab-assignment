@@ -1,17 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-
-    <!-- fonts -->
-
-
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
     
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+       
+        <nav>
+          <div class="container">
+            <div class="logo">
+              sanz
+            </div>
+
+            <div class="links">
+              <ul>
+                <li>
+                  <a href="#header">Home</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                
+                <li>
+                  <a href="#about">About</a>
+                </li>
+               
+              
+                <li>
+                  <a href="#hireme" class="active">Hire me</a>
+                </li>
+              </ul>
+            </div>
+
+           
+          </div>
+        </nav>
+
+        <div class="header-content">
+          <div class="container ">
+            <div class="column-1">
+              <h1 class="header-title">Sanzgrapher</h1>
+              <p class="text">
+                Hello, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fuga totam ad vitae nostrum asperiores, reprehenderit hic laborum veritatis corporis voluptatibus nesciunt necessitatibus itaque, a repudiandae iure. Doloribus, labore illo.
+              </p>
+              <a href="#" class="btn">Download CV</a>
+            </div>
+
+            <div class="column-2 image">
+              
+              <img src="./img/person.jpg" class="img-element z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="What I Dd">Services</h3>
+            <p class="text">
+              Get your thoughts into digital life !!
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+             
+              <div class="card" data-card="UI/UX">
+                <div class="card-content z-index">
+                  <img src="./img/design-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Web Design</h3>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                    est suscipit itaque?
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <div class="card" data-card="web">
+                <div class="card-content z-index">
+                  <img src="./img/code-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Web Development</h3>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores suscipit nobis dolore?
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+             
+              <div class="card" data-card="App">
+                <div class="card-content z-index">
+                  <img src="./img/app-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">App Security</h3>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum hic veniam nihil.
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Who Am I">About me</h3>
+          </div>
+
+          <div class="section-body ">
+            <div class="column-1">
+              <h3 class="title-sm">Hello, I'm Sanz</h3>
+              <p class="text">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quisquam voluptatem sint tempora ratione aspernatur quod, voluptas inventore. Quo, repudiandae? Soluta debitis nostrum voluptate accusamus provident repellendus quasi impedit officia.
+              </p>
+              <div class="skills">
+                <div class="skill html">
+                  <h3 class="skill-title">HTML</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90%"></div>
+                  </div>
+                </div>
+                <div class="skill css">
+                  <h3 class="skill-title">CSS</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70%"></div>
+                  </div>
+                </div>
+                <div class="skill js">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80%"></div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="column-2 image">
+            
+              <img src="./img/about.png" class="z-index" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <section class="hireme" id="hireme">
+          <div class="container">
+            <h3 class="title">Let's talk about a project</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+              culpa. Commodi suscipit animi officia dignissimos unde, ipsum fugiat
+              consequuntur, fugit ratione vel aperiam, similique distinctio
+              mollitia repellendus quasi rem vero!
+            </p>
+            <a href="#" class="btn">Hire me</a>
+          </div>
+        </section>
+
+      <section class="blog section">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="Last News">My blog</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo,
+              deserunt?
+            </p>
+          </div>
+
+          <div class="blog-wrapper">
+            <div class="blog-wrap">
+             
+
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="https://blog.narayan-dhakal.com.np/wp-content/uploads/2022/01/Grammarly.webp" alt="" />
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">March, 19 2020</h5>
+                    <h5 class="blog-user"><i class="fas fa-user"></i>sanzgrapher</h5>
+                  </div>
+                  <h3 class="title-sm">Grammarly - Tool 2 Write Better</h3>
+                  <p class="blog-text">
+                    Grammarly is a free tool that helps you write better. It corrects hundreds of grammatical errors, mistakes in word
+                    choice, and punctuation...
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-wrap">
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="https://blog.narayan-dhakal.com.np/wp-content/uploads/2021/12/End-To-End-Encrypted-1.webp" alt="" />
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">August, 02 2020</h5>
+                    <h5 class="blog-user"><i class="fas fa-user"></i>sanzgrapher</h5>
+                  </div>
+                  <h3 class="title-sm">What Is End To End Encrypted?</h3>
+                  <p class="blog-text">
+                    What is End to End Encrypted -how it works, its advantages, what are its disadvantages, and in the end Be aware of using social apps and software
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="blog-wrap">
+              <div class="blog-card">
+                <div class="blog-image">
+                  <img src="https://blog.narayan-dhakal.com.np/wp-content/uploads/2021/12/Blockchain1.webp" alt="" />
+                </div>
+
+                <div class="blog-content">
+                  <div class="blog-info">
+                    <h5 class="blog-date">December, 12 2020</h5>
+                    <h5 class="blog-user"><i class="fas fa-user"></i>sanzgrapher</h5>
+                  </div>
+                  <h3 class="title-sm">What Is BlockChain?</h3>
+                  <p class="blog-text">
+                    What Is BlockChain ? It’s simply a place to keep records in blocks (like a database) connected in series so we call it
+                    the Blockchain.
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+
     
-</body>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+       
+
+        <div class="bottom-footer">
+          <div class="copyright">
+            <p class="text">
+              Copyright&copy;2022 All rights reserved | Made by
+              <span>sanz</span>
+            </p>
+          </div>
+
+          
+        </div>
+      </div>
+    </footer>
+
+   
+   
+  </body>
 </html>
