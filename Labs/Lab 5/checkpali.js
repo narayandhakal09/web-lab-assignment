@@ -1,18 +1,18 @@
 document.getElementById('title').innerHTML = 'check palindrom or not';
 
-const string = prompt('enter ');
+var string = prompt('enter ');
 
 string = string.toString();
 
 
 var newstr = "";
-console.log(string);
+// console.log(string);
 for (let i = string.length - 1; i >= 0; i--) {
     
     newstr += string[i];
 
 }
-console.log(newstr);
+// console.log(newstr);
 if (newstr == string) {
     console.log('palindrom');
 }

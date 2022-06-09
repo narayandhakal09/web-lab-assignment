@@ -1,4 +1,4 @@
-document.getElementById('title').innerHTML = 'sum of string';
+document.getElementById('title').innerHTML = 'sum of Prime numbers';
 
 let sum = 0;
 for (let i = 1; i <= 50; i++) {
