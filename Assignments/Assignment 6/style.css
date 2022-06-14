@@ -1,0 +1,48 @@
+ body {
+
+     width: 100vw;
+     height: 100vh;
+ }
+
+ .absolute {
+     position: absolute;
+ }
+
+ .top_z {
+
+     top: 25px;
+     z-index: 5;
+ }
+
+ [draggable] {
+     cursor: move;
+ }
+
+ .reset {
+     color: #fff;
+     padding: 10px 15px;
+     background-color: blue;
+     border-radius: 25px;
+     position: absolute;
+     right: 0;
+ }
+
+ .reset:hover {
+     font-size: large;
+
+
+ }
+
+
+ .box {
+     color: #fff;
+     border-radius: 25px;
+     text-align: center;
+     padding: 50px 50px;
+     background-color: red;
+     margin-left: 10px;
+ }
+
+ main {
+     display: flex;
+ }
