@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+        }
+
+        #box1 {
+            background-color: red;
+           
+            top: 0px;
+        }
+
+        #box2 {
+            background-color: rgb(242, 255, 0);
+            /* margin-left: 200px; */
+          
+
+            top: 30px;
+            left: 80px;
+
+        }
+
+        #box3 {
+            background-color: rgb(8, 0, 255);
+              top: 100px;
+            left: 300px;
+
+
+        }
+
+        .box {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box " id="box1"></div>
+    <div class="box " id="box2"></div>
+    <div class="box " id="box3"></div>
+    <script>
+
+// const bx1 = document.getElementById('box1');
+// const bx2 = document.getElementById('box2');
+// const bx3 = document.getElementById('box3');
+
+
+//         bx1.addEventListener("click", function () {
+//             bx1.style.zIndex = 5;
+//             bx2.style.zIndex=0;
+//             bx3.style.zIndex = 0;
+
+
+
+//         });
+//         bx2.addEventListener("click", function () {
+//             bx2.style.zIndex = 5;
+//             bx1.style.zIndex = 0;
+//             bx3.style.zIndex = 0;
+
+
+
+
+//         });  bx3.addEventListener("click", function () {
+//             bx3.style.zIndex = 5;
+//             bx2.style.zIndex = 0;
+//             bx1.style.zIndex = 0;
+
+
+
+//         });
+
+
+    const boxes = document.querySelectorAll('.box')
+    for (el of boxes) {
+        el.addEventListener("click", function (event) {
+            // event.target.style.visibility = "hidden";
+            event.target.style.zIndex = "100";
+
+
+        })
+    }
+
+    </script>
+</body>
+
+</html>
