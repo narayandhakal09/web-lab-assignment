@@ -58,6 +58,9 @@ But What if we can shorten to a costom domain like
  
  ```
 
+ Correctly enter the document root because the typos can create problems .Give a unique name for the specific project you are working on it can be any thing like paypal.local .... ... 
+ and Append the code as per your projects .
+
 ### Update your Window Host File
 
 
@@ -65,7 +68,7 @@ But What if we can shorten to a costom domain like
 
             note : Your system cannot allow yo to edit directly there so make sure that you copy it to different location and have an extra original copy in any case
             
-Lets edit :
+Lets edit : Here put the dummy alias you entered previously next to ip `127.0.01` and append accordingly adding your next projects
 ```
 # localhost name resolution is handled within DNS itself.
 # 127.0.0.1       localhost
@@ -80,6 +83,7 @@ Lets edit :
 
 
 ```
+
 
 Now the previous project url wont work and type the new url you config to 
 At me i have two urls       `project1.local` & `project2.local` Working 
