@@ -63,10 +63,13 @@ But What if we can shorten to a costom domain like
 
 ### Update your Window Host File
 
+<span style="color:Red">Note : Make sure to duplicate the host file in any seperate location :</span>.
+
 
  Go to path `C:\Windows\System32\drivers\etc` to edit `host` file  
 
-            note : Your system cannot allow yo to edit directly there so make sure that you copy it to different location and have an extra original copy in any case
+            
+<span style="color:Red">note : Your system cannot allow yo to edit directly there so make sure that you copy it to different location and have an extra original copy in any case</span>.
             
 Lets edit : Here put the dummy alias you entered previously next to ip `127.0.01` and append accordingly adding your next projects
 ```
