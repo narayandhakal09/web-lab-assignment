@@ -1,3 +1,3 @@
 <?php
-echo "namaste World 1";
+echo "Namaste World 2";
 ?>
