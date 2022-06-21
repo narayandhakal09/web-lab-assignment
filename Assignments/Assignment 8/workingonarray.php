@@ -37,14 +37,33 @@ $gces_Staffs =
     ];
 
     echo "Default <br><pre> ";
-print_r($gces_Staffs);
+// print_r($gces_Staffs);
 
    echo  "</pre>";
     array_multisort($gces_Staffs);
 
 echo "Default <br><pre> ";
-print_r($gces_Staffs);
+// print_r($gces_Staffs);
 
 echo  "</pre>";
 
+
+
+$person = [
+    [
+        "name" => "Peter ",
+        "roll" => "1",
+    ],
+    [
+        "name" => "Clark Kent",
+        "roll" => "2",
+    ],
+    [
+        "name" => "Harry Potter",
+        "roll" => "3",
+    ]
+    ];
+
+sort($person);
+var_dump($person)
 ?>
