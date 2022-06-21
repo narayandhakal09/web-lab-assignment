@@ -35,28 +35,54 @@ $gces_Staffs =
 
 
     ];
-    
 foreach ($gces_Staffs as $keys => $v1) {
-    echo $keys . " <br><br>";
+    echo "<table border ='1px' cellpadding='5px' style='border-collapse: collapse;'>";
+    echo ucfirst($keys);
+
+    echo "<br><br>";
+    echo "<tr >";
+    if ($keys == "academics") {
+
+
+        echo "<th>Name</th>";
+        echo "<th>Address</th>";
+        echo "<th>Phone No</th>";
+        echo "<th>Subjects</th>";
+    } else {
+        echo "<th>Name</th>";
+        echo "<th>Address</th>";
+        echo "<th>Phone No</th>";
+    }
+    echo "</tr>";
+
     foreach ($v1 as $v2 => $v3) {
+
+
+
+
+
+        echo "<tr>";
         foreach ($v3 as $v4 => $v5) {
-
+            // echo  "<th>" .$v4 ."<th>";
             if (is_array($v5)) {
-                
-                echo $v4 . " = " ;
+                // echo $v4 . " = " ;
+                echo "<td>";
                 foreach ($v5 as $v6 => $v7) {
-                   
-                    echo "/" . $v7  ;
-                }
-                echo "<br>";
-            } else {
 
-                echo " $v4  = $v5  <br>";
+
+                    echo " " .  $v7 . " ";
+                }
+
+                echo "</td>";
+            } else {
+                // echo " $v4  = $v5  <br>";
+                echo "  <td>$v5  </td>";
             }
         }
-        echo "<br>";
+        echo "</tr>";
     }
-    echo "<br>";
+
+    echo "</table> <br><br>";
 }
 
 
