@@ -1,64 +1,68 @@
 <?php
 $gces_Staffs =
     [
-        "academics" => 
+        "academics" =>
 
         [
-            "name" => "Narayan Dhakal",
-            "address" => "Pokhara,Chhorepatan",
-             "phoneno" => ["98469456**","9863376***"],
-             "subject" => ["html","Css","js"]
-        ]
-        ,
-    [
-        "name" => "Sanzgrapher",
-        "address" => "Pokhara,Davisfall",
-        "phoneno" => ["98469456**", "9863376***"],
-        "subject" => ["C", "C++", "Java"]
-    ]
-            
-        
-            
-        
-        ,
+            [
+                "name" => "Narayan Dhakal",
+                "address" => "Pokhara,Chhorepatan",
+                "phoneno" => ["98469456**", "9863376***"],
+                "subject" => ["html", "Css", "js"]
+            ],
+            [
+                "name" => "Sanzgrapher",
+                "address" => "Pokhara,Davisfall",
+                "phoneno" => ["98469456**", "9863376***"],
+                "subject" => ["C", "C++", "Java"]
+            ]
+        ],
         "nonacademics " =>
         [
-        "name" => "Sanzgrapher",
-        "address" => "Pokhara,Davisfall",
-        "phoneno" => ["98469456**", "9863376***"]
-        ],
-       [
-        "name" => "Sanzgrapher",
-        "address" => "Pokhara,Davisfall",
-        "phoneno" => ["98469456**", "9863376***"]
-       ]
-        
-       
-        
-    
+            [
+                "name" => "Sanzgrapher",
+                "address" => "Pokhara,Davisfall",
+                "phoneno" => ["98469456**", "9863376***"]
+            ],
+            [
+                "name" => "Sanzgrapher",
+                "address" => "Pokhara,Davisfall",
+                "phoneno" => ["98469456**", "9863376***"]
+            ]
+        ]
+
+
+
+
     ];
-foreach($gces_Staffs as $keys => $v1 ){
-    // echo $keys ." uu <br>" ;
-    foreach($v1 as $v2 =>$v3  ){
-if (is_array($v3)) {
-            foreach ($v3 as $v4 => $v5) {
-                echo " $v2  = $v5  <br>";
+    
+foreach ($gces_Staffs as $keys => $v1) {
+    echo $keys . " <br><br>";
+    foreach ($v1 as $v2 => $v3) {
+        foreach ($v3 as $v4 => $v5) {
 
+            if (is_array($v5)) {
+                
+                echo $v4 . " = " ;
+                foreach ($v5 as $v6 => $v7) {
+                   
+                    echo "/" . $v7  ;
+                }
+                echo "<br>";
+            } else {
+
+                echo " $v4  = $v5  <br>";
             }
-}
-else{
-            echo "$v2 = $v3  <br>";
-
-}
-        
+        }
+        echo "<br>";
     }
     echo "<br>";
 }
 
 
-echo"<pre>";
+echo "<pre>";
 print_r($gces_Staffs);
-echo"<pre>";
+echo "<pre>";
 
 
 
