@@ -35,13 +35,14 @@ $gces_Staffs =
 
 
     ];
-foreach ($gces_Staffs as $keys => $v1) {
+foreach ($gces_Staffs as $staffType => $v1) {
+  
     echo "<table border ='1px' cellpadding='5px' style='border-collapse: collapse;'>";
-    echo ucfirst($keys);
+    echo ucfirst($staffType);
 
     echo "<br><br>";
     echo "<tr >";
-    if ($keys == "academics") {
+    if ($staffType == "academics") {
 
 
         echo "<th>Name</th>";
@@ -57,7 +58,7 @@ foreach ($gces_Staffs as $keys => $v1) {
 
     foreach ($v1 as $v2 => $v3) {
 
-
+        // echo $v2;
 
 
 
@@ -67,6 +68,7 @@ foreach ($gces_Staffs as $keys => $v1) {
             if (is_array($v5)) {
                 // echo $v4 . " = " ;
                 echo "<td>";
+                
                 foreach ($v5 as $v6 => $v7) {
 
 
@@ -75,7 +77,6 @@ foreach ($gces_Staffs as $keys => $v1) {
 
                 echo "</td>";
             } else {
-                // echo " $v4  = $v5  <br>";
                 echo "  <td>$v5  </td>";
             }
         }
