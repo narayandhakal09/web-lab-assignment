@@ -105,28 +105,3 @@ echo "<pre>";
 
 
 
-// for ($i = 0; $i < count($gces_Staffs); $i++) {
-
-    // for ($j = 0; $j < count($gces_Staffs[$i][$i]); $j++){
-    //    foreach ($gces_Staffs[$i][""] as $casr => $price) {
-        // echo "The price  is  ." . '<br>';
-    // }
-
-// var_dump($gces_Staffs[$i]);
-
-    // }
-
-    // foreach ($gces_Staffs[$i] as $casr => $price) {
-    //     echo "The price $casr is  ." . '<br>';
-    // }
-
-
-
-//     //      foreach ($yourArray as $subAray){
-//     //         echo $subAray['address'];
-//     //      }
-//     for ($i = 0; $i < count($gces_Staffs["$i"]); $i++) {
-//     }
-
-//     //     //  $value = $addresses[$i]; echo "$value\n";
-// }
