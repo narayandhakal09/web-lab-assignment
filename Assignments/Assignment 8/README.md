@@ -1,4 +1,4 @@
-        Assignment Date - Sun June 19/22 - Mon June 19/22
+        Assignment Date - Tue June 21/22 - Wed June 22/22
 Table Of Contents 
 - [Arrays In PHP](#arrays-in-php)
   - [Types of Arrays in PHP](#types-of-arrays-in-php)
