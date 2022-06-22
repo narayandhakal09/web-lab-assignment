@@ -4,7 +4,7 @@ function reset() {
 function dragndrop() {
     let position_x;
     let position_y;
-    let select;
+    let select; 
     function drag(e) {
         select = e.target;
         position_x = e.offsetX === undefined ? e.layerX : e.offsetX;
