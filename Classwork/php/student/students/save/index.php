@@ -3,7 +3,7 @@
 include "../../includes/dbconnect.php";
 
 
-
+// echo var_dump($_REQUEST);
 
 $name = $_POST['name'] ?? ' ';
 $email = $_POST['email'];
@@ -16,13 +16,15 @@ $hobby = implode(",",$_POST['hobby']);
 $nation = $_POST['nation'];
 
 
-$sql = "INSERT INTO students (`name` `email`, `password`, `dob`, `favorite_color`, `weight`, `gender`, `hobbies`, `nationality`)
-          VALUES('$name',$email','$password','$date','$color',$weight,'$gender','$hobby','$nation');";
+$sql = "INSERT INTO students (`name`, `email`, `password`, `dob`, `favorite_color`, `weight`, `gender`, `hobbies`, `nationality`)
+          VALUES('$name','$email','$password','$date','$color',$weight,'$gender','$hobby','$nation');";
 
 
 
 if($conn->query($sql)== TRUE){
-    die("SUCESS");
+    // die("SUCESS");
+    header('Location:../create/');
+    // echo "<p>Sucess</p>";
 }
 else{
     die("error");
