@@ -1,0 +1,15 @@
+  #input-todo {
+      height: 50px;
+      width: 50%;
+      margin-top: 2rem;
+      padding-left: 25px;
+  }
+
+  .container {
+      position: absolute;
+      margin: auto;
+      left: 0px;
+      right: 0px;
+      height: 70vh;
+      width: 50vw;
+  }
