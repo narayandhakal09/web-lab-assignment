@@ -143,13 +143,7 @@ include_once "../../includes/utilis/dbconnect.php";
 
                                 </div>
 
-                                <div class="col-sm-6">
-                                    <label for="password" class="form-label">Password</label>
-                                    <div class="input-group has-validation">
-                                        <input type="password" class="form-control" id="password" name="password" placeholder="*******" required>
-
-                                    </div>
-                                </div>
+                               
 
                                 <div class="col-3">
                                     <label for="date" class="form-label">Date </label>

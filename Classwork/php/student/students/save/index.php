@@ -80,7 +80,7 @@ if (isset($_POST['update'])) {
 
     $name = $_POST['name'] ?? ' ';
     $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
     $date = $_POST['date'];
     $color = $_POST['color'];
     $weight = $_POST['weight'];
@@ -90,7 +90,7 @@ if (isset($_POST['update'])) {
 
 
 
-    $sql = "UPDATE students SET name='$name',email='$email',password='$password',dob='$date',favorite_color='$color',weight=$weight,gender='$gender',hobbies='$hobby',nationality='$nation' WHERE id='$id'";
+    $sql = "UPDATE students SET name='$name',email='$email',dob='$date',favorite_color='$color',weight=$weight,gender='$gender',hobbies='$hobby',nationality='$nation' WHERE id='$id'";
 
 
 
