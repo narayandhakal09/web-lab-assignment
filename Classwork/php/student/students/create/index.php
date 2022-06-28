@@ -48,21 +48,21 @@ include_once "../../includes/utilis/dbconnect.php";
                 <p class="lead">Enter the Data of students to add them .</p>
             </div>
             <?php
-            if($_GET['sucess'] == "sucess"){
-echo " <div class='alert alert-success' role='alert'>
+            if ($_GET['sucess'] == "sucess") {
+                echo " <div class='alert alert-success' role='alert'>
                 <span>x</span>
                 Sucess!
             </div>";
-            }else{
-echo "   <div class='alert alert-danger' role='alert'>
+            } else {
+                echo "   <div class='alert alert-danger' role='alert'>
                 <span>x</span>
                 Error!
             </div>";
             }
             ?>
-            
 
-         
+
+
 
             <div class="row  ">
                 <div class="col-md-5 col-lg-4 order-md-last">
@@ -72,9 +72,9 @@ echo "   <div class='alert alert-danger' role='alert'>
                     </h4>
                     <ul class="list-group mb-3">
                         <?php
-        $sql = "SELECT * FROM students";
+                        $sql = "SELECT * FROM students";
 
-        $result = $conn->query($sql);   
+                        $result = $conn->query($sql);
 
 
                         if ($result->num_rows > 0) {
@@ -217,9 +217,10 @@ echo "   <div class='alert alert-danger' role='alert'>
 
 
 
+                        <button class="w-25 btn btn-primary btn-lg" type="submit" name="submit">Submit</button>
+                        <button class="w-25 btn btn-danger btn-lg" type="submit" name="cancel">Cancel</button>
 
-                        <input class="w-25 btn btn-primary btn-lg" type="submit" value="Submit">
-                        <input class="w-25 btn btn-danger btn-lg" type="reset" value="Cancel">
+
                     </form>
                 </div>
             </div>

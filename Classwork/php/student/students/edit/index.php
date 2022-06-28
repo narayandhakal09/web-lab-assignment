@@ -124,8 +124,13 @@ include_once "../../includes/utilis/dbconnect.php";
 
 
                     ?>
-                        <form class="needs-validation" action="../save/" method="POST" enctype="multipart/form-data">
+                        <form class="needs-validation" action="../save/index.php" method="POST" enctype="multipart/form-data">
                             <div class="row g-3">
+                                <div class="col-12">
+                                
+                                    <input type="hidden" class="form-control" id="name" name="id" value="<?= $students['id']; ?>" >
+
+                                </div>
                                 <div class="col-12">
                                     <label for="name" class="form-label">Name</label>
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" value="<?= $students['name']; ?>" required>
@@ -212,7 +217,7 @@ include_once "../../includes/utilis/dbconnect.php";
                                     <label for="hobby" class="form-label">Hobbies </label>
                                     <div class="form-check">
                                         <label class="form-check-label" for="travelling">Travelling</label>
-                                        <input  class="form-check-input" type="checkbox" class="form-check-input" id="travelling" value="travelling" name="hobby[]">
+                                        <input class="form-check-input" type="checkbox" class="form-check-input" id="travelling" value="travelling" name="hobby[]">
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="reading" value="reading" name="hobby[]">
@@ -252,10 +257,12 @@ include_once "../../includes/utilis/dbconnect.php";
 
 
 
+                            <button class="w-25 btn btn-primary btn-lg" type="submit" name="update">Submit</button>
+                            <button class="w-25 btn btn-danger btn-lg" type="submit" name="cancel">Cancel</button>
 
 
-                            <input class="w-25 btn btn-primary btn-lg" type="submit" value="Submit">
-                            <input class="w-25 btn btn-danger btn-lg" type="reset" value="Cancel">
+
+
                         </form>
                     <?php
 
