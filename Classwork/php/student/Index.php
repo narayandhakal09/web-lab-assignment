@@ -28,7 +28,12 @@ $result = $conn->query($sql);
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <style>
-
+        .profileimage {
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            border: 1px solid blue;
+        }
     </style>
 </head>
 
@@ -135,7 +140,8 @@ $result = $conn->query($sql);
                                 <tr>
                                     <th scope="row"><?= $students['id']; ?></th>
                                     <td><?= $students['name']; ?></td>
-                                    <td><?= $students['profile']; ?></td>
+                                    <td> <img class="profileimage" src="./students/stdImage/<?= $students['profile']; ?>" alt="">
+                                    </td>
                                     <td><?= $students['email']; ?></td>
                                     <td><?= $students['weight']; ?></td>
                                     <td><?= $students['nationality']; ?></td>

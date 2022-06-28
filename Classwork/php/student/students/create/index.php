@@ -198,7 +198,8 @@ include_once "../../includes/utilis/dbconnect.php";
                             <div class="col-md-5  ">
 
                                 <label class="form-check-label" id="profile">Profile</label>
-                                <input type="file" name="profile" id="profile" class="form-control" accept=".png">
+                                <input type="file" name="profile" id="profile" class="form-control" accept="image/png>
+
 
 
                             </div>
