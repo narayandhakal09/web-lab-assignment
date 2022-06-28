@@ -1,9 +1,10 @@
 <?php
 
-include "../../includes/dbconnect.php";
-
+include "../../includes/utilis/dbconnect.php";
+// echo "<pre>";
 
 // echo var_dump($_REQUEST);
+// echo "</pre>";
 
 $name = $_POST['name'] ?? ' ';
 $email = $_POST['email'];
@@ -23,10 +24,11 @@ $sql = "INSERT INTO students (`name`, `email`, `password`, `dob`, `favorite_colo
 
 if($conn->query($sql)== TRUE){
     // die("SUCESS");
-    header('Location:../create/');
+    header('Location:../create/?sucess=sucess');
     // echo "<p>Sucess</p>";
 }
 else{
-    die("error");
+    header('Location:../create/?sucess=error');
+
 
 }
