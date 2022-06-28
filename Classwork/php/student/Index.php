@@ -97,13 +97,12 @@ $result = $conn->query($sql);
                 <span>x</span>
                 Sucess!
             </div>";
-                } elseif(isset($_GET['sucess'])) {
+                } elseif (isset($_GET['sucess'])) {
                     echo "   <div class='alert alert-danger' role='alert'>
                 <span>x</span>
                 Error!
             </div>";
-                }
-                else{
+                } else {
                     echo "";
                 }
                 ?>
@@ -145,7 +144,7 @@ $result = $conn->query($sql);
                                     <td><?= $students['dob']; ?></td>
                                     <td><?= $students['hobbies']; ?></td>
                                     <td>
-                                        <a href="#">edit</a>
+                                        <a href="#" data-id="<?= $students['id']; ?>" class="edit">edit</a>
                                         <a href="#" data-id="<?= $students['id']; ?>" class="delete">delete</a>
                                     </td>
                                 </tr>
@@ -171,6 +170,25 @@ $result = $conn->query($sql);
         for (el of deleteEl) {
             el.addEventListener("click", deleteStudent);
         }
+        const updateEl = document.querySelectorAll(".edit");
+        for (el of updateEl) {
+            el.addEventListener("click", editStudent);
+        }
+
+        function editStudent(event) {
+            const id = event.target.getAttribute('data-id');
+            let formEl = document.createElement("form");
+            formEl.setAttribute("method", "POST");
+            formEl.setAttribute("action", "./students/edit/");
+            let idEl = document.createElement("input");
+            idEl.setAttribute("type", "hidden");
+            idEl.setAttribute("name", "id");
+            idEl.setAttribute("value", id);
+            formEl.appendChild(idEl);
+            document.body.appendChild(formEl);
+            formEl.submit();
+        }
+
 
         function deleteStudent(event) {
             const id = event.target.getAttribute('data-id');

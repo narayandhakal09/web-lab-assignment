@@ -48,16 +48,18 @@ include_once "../../includes/utilis/dbconnect.php";
                 <p class="lead">Enter the Data of students to add them .</p>
             </div>
             <?php
-            if ($_GET['sucess'] == "sucess") {
+            if (isset($_GET['sucess']) == "sucess") {
                 echo " <div class='alert alert-success' role='alert'>
                 <span>x</span>
                 Sucess!
             </div>";
-            } else {
+            } elseif (isset($_GET['sucess']) == 'error') {
                 echo "   <div class='alert alert-danger' role='alert'>
                 <span>x</span>
                 Error!
             </div>";
+            } else {
+                echo "";
             }
             ?>
 
@@ -105,6 +107,14 @@ include_once "../../includes/utilis/dbconnect.php";
                     <?php
                     $sql = "SELECT * FROM students";
 
+                    $id = $_POST['id'];
+
+                    $sql = "SELECT * FROM students WHERE students.id = '$id'";
+
+                    $result = $conn->query($sql);
+
+
+
                     $result = $conn->query($sql);
 
 
@@ -131,7 +141,7 @@ include_once "../../includes/utilis/dbconnect.php";
                                 <div class="col-sm-6">
                                     <label for="password" class="form-label">Password</label>
                                     <div class="input-group has-validation">
-                                        <input type="password" class="form-control" id="password" name="password" placeholder="*******" value="<?= $students['password']; ?>" required>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="*******" required>
 
                                     </div>
                                 </div>
@@ -146,10 +156,18 @@ include_once "../../includes/utilis/dbconnect.php";
                                 <div class="col-md-5">
                                     <label for="country" class="form-label">Country</label>
                                     <select name="nation" class="form-select" id="country">
-                                        <option value="NP">Nepal</option>
-                                        <option value="IN">India</option>
-                                        <option value="CH">China</option>
-                                        <option value="UK">United Kingdom</option>
+                                        <option value="NP" <?php if ($students['nationality'] == 'NP') {
+                                                                echo "selected";
+                                                            } ?>>Nepal</option>
+                                        <option value="IN" <?php if ($students['nationality'] == 'IN') {
+                                                                echo "selected";
+                                                            } ?>>India</option>
+                                        <option value="CH" <?php if ($students['nationality'] == 'CH') {
+                                                                echo "selected";
+                                                            } ?>>China</option>
+                                        <option value="UK" <?php if ($students['nationality'] == 'UK') {
+                                                                echo "selected";
+                                                            } ?>>United Kingdom</option>
                                     </select>
                                 </div>
 
@@ -173,22 +191,28 @@ include_once "../../includes/utilis/dbconnect.php";
 
                                     <div class="form-check">
                                         <label class="form-check-label" for="male">Male</label>
-                                        <input id="male" name="gender" type="radio" value="male" class="form-check-input" checked required>
+                                        <input <?php if ($students['gender'] == 'male') {
+                                                    echo "checked";
+                                                } ?> id="male" name="gender" type="radio" value="male" class="form-check-input" required>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label" for="female">Female</label>
-                                        <input class="form-check-input" id="female" value="female" name="gender" type="radio" class="form-check-input" required>
+                                        <input <?php if ($students['gender'] == 'female') {
+                                                    echo "checked";
+                                                } ?> class="form-check-input" id="female" value="female" name="gender" type="radio" class="form-check-input" required>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label" for="other">Other</label>
-                                        <input class="form-check-input" id="other" value="female" name="gender" type="radio" value="other" class="form-check-input" required>
+                                        <input <?php if ($students['gender'] == 'other') {
+                                                    echo "checked";
+                                                } ?> class="form-check-input" id="other" value="female" name="gender" type="radio" value="other" class="form-check-input" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6  ">
                                     <label for="hobby" class="form-label">Hobbies </label>
                                     <div class="form-check">
                                         <label class="form-check-label" for="travelling">Travelling</label>
-                                        <input class="form-check-input" type="checkbox" class="form-check-input" id="travelling" value="travelling" name="hobby[]">
+                                        <input  class="form-check-input" type="checkbox" class="form-check-input" id="travelling" value="travelling" name="hobby[]">
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="reading" value="reading" name="hobby[]">
